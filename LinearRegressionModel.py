@@ -20,7 +20,7 @@ class LinearRegressionModel:
         mean = sum(data) / len(data)
         std_deviation = math.sqrt(sum((x - mean) ** 2 for x in data) / len(data))
         normalized_data = [(x - mean) / std_deviation for x in data]
-        print("Dữ liệu sau chuẩn hóa Z-score:")
+        print("Data after Z-score normalization:")
         return normalized_data, mean, std_deviation
     
     def load_data(self, file_path):
